@@ -1,0 +1,101 @@
+/* Custom Fonts & Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar-nav .nav-link {
+    color: #555;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+.nav-item-active {
+    background-color: #f1ede8; /* Màu nền cho item đang active */
+}
+
+.brand-logo {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.15em;
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Header Titles */
+.main-title {
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 3rem;
+    margin-bottom: 0.2rem;
+}
+
+.sub-title {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 300;
+}
+
+/* Sidebar Styling */
+.sidebar-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.filter-category {
+    font-size: 1rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 0.8rem 0;
+    cursor: pointer;
+}
+
+.sidebar-list a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.85rem;
+    display: block;
+    padding: 0.3rem 0;
+}
+
+.sidebar-list a:hover {
+    color: #000;
+}
+
+.sidebar-list .active-filter {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Product Grid */
+.product-card {
+    border: none;
+    text-align: center;
+}
+
+.product-img-wrapper {
+    height: 180px; /* Cố định chiều cao để ảnh đều nhau */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.product-img-wrapper img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #000;
+    padding: 0 1rem;
+}
