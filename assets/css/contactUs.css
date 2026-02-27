@@ -1,0 +1,240 @@
+/* Page Header */
+.page-header {
+  background: linear-gradient(135deg, #c9a86c 0%, #b38f4f 100%);
+  padding: 80px 0 60px;
+  color: white;
+}
+
+.page-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+}
+
+.breadcrumb-item a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: white;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Contact Cards */
+.contact-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(201, 168, 108, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.contact-icon i {
+  font-size: 40px;
+  color: #c9a86c;
+}
+
+.contact-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.contact-details p {
+  margin-bottom: 15px;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.contact-details i {
+  color: #c9a86c;
+  margin-right: 10px;
+  font-size: 18px;
+  width: 25px;
+}
+
+/* Business Hours */
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #e9ecef;
+}
+
+.hours-row:last-child {
+  border-bottom: none;
+}
+
+.hours-row .day {
+  font-weight: 600;
+  color: #333;
+}
+
+.hours-row .time {
+  color: #666;
+}
+
+.hours-note p {
+  color: #666;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.hours-note i {
+  color: #c9a86c;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* Quick Contact Form */
+.quick-contact-form .form-control {
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-size: 14px;
+}
+
+.quick-contact-form .form-control:focus {
+  border-color: #c9a86c;
+  box-shadow: 0 0 0 0.2rem rgba(201, 168, 108, 0.25);
+}
+
+/* Map Section */
+.map-section {
+  background: #f8f9fa;
+}
+
+.map-container {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Methods */
+.method-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.method-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(201, 168, 108, 0.15);
+}
+
+.method-card i {
+  font-size: 48px;
+  color: #c9a86c;
+  margin-bottom: 20px;
+}
+
+.method-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.method-card p {
+  color: #666;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Active nav link */
+.nav-link.active {
+  color: #c9a86c !important;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 36px;
+  }
+
+  .contact-card {
+    padding: 30px 20px;
+  }
+
+  .contact-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .contact-icon i {
+    font-size: 30px;
+  }
+
+  .contact-card h3 {
+    font-size: 20px;
+  }
+
+  .hours-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hours-row .day,
+  .hours-row .time {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-header {
+    padding: 60px 0 40px;
+  }
+
+  .page-title {
+    font-size: 28px;
+  }
+
+  .method-card {
+    padding: 20px 15px;
+  }
+
+  .method-card i {
+    font-size: 36px;
+  }
+}
